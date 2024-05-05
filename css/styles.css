@@ -96,14 +96,14 @@ hr {
 
 /* Languages */
 .language {
-    flex-direction: column;
+    flex-direction: column !important;
 }
 
-.language p span {
-    text-align: right;
-    margin-left: 10px;
+.text-al {
+    padding: 5px;
+    text-align: center;
 }
-  
+
   
 /* RIGHT COLLUMN:
 ** ------------------------------ */

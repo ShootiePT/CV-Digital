@@ -35,8 +35,3 @@ window.onload = function() {
 window.addEventListener('resize', function() {
     removeFlexTecSkill();
 });
-
-
-/* Call Functions */
-translateElements('en');
-setActiveButton('en');
