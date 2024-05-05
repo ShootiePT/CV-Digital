@@ -1,16 +1,17 @@
-/* Light / Dark Mode */
-const paragraph = document.querySelector('.grey-text');
-const toggleElement = document.querySelector('.change-color');
-let whiteMode = false;
+const toggleButton = document.getElementById('toggleButton');
+let isDarkMode = false;
 
-function toggleColors() {
-    whiteMode = !whiteMode;
-
-    if (whiteMode) {
-        paragraph.classList.add('white-background', 'black-text');
-        paragraph.classList.remove('grey-text');
+toggleButton.addEventListener('click', function() {
+    
+    const body = document.body;
+    if (isDarkMode) {
+        body.classList.remove('dark-mode');
+        body.classList.add('light-mode');
+        console.log("here");
     } else {
-        paragraph.classList.remove('white-background', 'black-text');
-        paragraph.classList.add('grey-text');
+        body.classList.remove('light-mode');
+        body.classList.add('dark-mode');
+        console.log("herere");
     }
-}
+    isDarkMode = !isDarkMode;
+});
