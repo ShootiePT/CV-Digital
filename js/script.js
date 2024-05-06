@@ -26,7 +26,6 @@ function removeFlexTecSkill() {
       div.classList.add('flex-container');
     }
 }
-  
 
 window.onload = function() {
     removeFlexTecSkill();
