@@ -31,7 +31,7 @@ hr {
 }
 
 #container {
-    width: 75%;
+    width: 80%;
     position: relative;
 }
 
@@ -73,24 +73,6 @@ hr {
 
 #left-col ul li img {
     width: 40px;
-}
-
-.skill-full {
-    border: 1px solid #fff;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-}
-
-.skill-empty {
-    border: 1px solid #fff;
-    background-color: transparent;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
 }
 
 
@@ -183,4 +165,16 @@ hr {
     height: 35px;
     background-color: #2A2D31;
     color: #fff;
+}
+
+#toggleButton{
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    z-index:1;
+    height: 35px;
 }
