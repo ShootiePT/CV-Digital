@@ -6,55 +6,21 @@
         <link rel="icon" href="/resources/favIcon.png" type="image/x-icon">
 
         <link rel="stylesheet" href="/css/styles.css">
-
-        <style>
-            /* Estilos CSS para a navbar */
-            .navbar {
-                background-color: #333; /* Cor de fundo do cabeçalho */
-                color: white; /* Cor do texto */
-                padding: 10px 0; /* Espaçamento interno do cabeçalho */
-                position: fixed; /* Tornar o cabeçalho fixo no topo */
-                top: 0; /* Fixar o cabeçalho no topo da página */
-                width: 100%; /* Fazer o cabeçalho ocupar a largura total */
-                z-index: 1000; /* Garantir que o cabeçalho esteja na frente de outros elementos */
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 20px;
-            }
-    
-            .navbar-brand {
-                font-size: 20px;
-            }
-    
-            .navbar-nav a {
-                margin-right: 20px;
-                color: white;
-                text-decoration: none;
-                transition: color 0.3s ease;
-            }
-    
-            .navbar-nav a:hover {
-                color: #ffd700; /* Cor ao passar o mouse */
-            }
-    
-            .navbar-controls {
-                display: flex;
-                align-items: center;
-            }
-        </style>
     </head>
 
     <body>
         <!-- Container -->
         <div id="container" class="mr-auto ml-auto flex-container">
 
+            <!-- Header -->
             <header class="navbar">
                 <div class="navbar-brand">My Website</div>
                 <nav class="navbar-nav">
-                    <a href="#home">Home</a>
-                    <a href="#projects-ongoing">Projetos em Andamento</a>
-                    <a href="#projects-completed">Projetos Concluídos</a>
+                    <a href="#">Home</a>
+                    <a href="#">My Background</a>
+                    <a href="#">Ongoing Projects</a>
+                    <a href="#">Completed Projects</a>
+                    
                 </nav>
                 <div class="navbar-controls">
                     <!-- LANGUAGE Buttons -->
@@ -74,7 +40,7 @@
                 <!-- Profile -->
                 <img class="profile-img" src="/resources/profile.png" alt="profile image">
                 <h1 class="mb-60 u-case">JOSÉ ROCHA</h1>
-                <div class="grid-container-4 language flex-container g-gap-20">
+                <div class="grid-container-4 language flex-container g-gap-30">
                     <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                         <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="gmail"></a>
                     </div>
@@ -91,7 +57,7 @@
                 <p class="mb-60"><span data-translate="Locatio"><img src="/resources/w-location.png" style="width: 10px;"></span> Aveiro, Portugal</p>
 
                 <!-- Language -->
-                <div class="language flex-container mb-60 g-gap-50">
+                <div class="language flex-container mb-60">
                     <div> 
                         <h4 data-translate="Portuguese" class="text-al">Portuguese</h4>
                     </div>
@@ -102,7 +68,7 @@
 
                 <!-- Skills -->
                 <p data-translate="SSkills" class="mb-10"><strong>Skills</strong></p>
-                <div class="grid-container-3 language flex-container g-gap-20">
+                <div class="grid-container-3 language flex-container g-gap-30">
                     <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                         <a target="_blank"><img src="https://skillicons.dev/icons?i=javascript" alt="Java Script"></a>
                     </div>
@@ -140,7 +106,7 @@
                         <a target="_blank"><img src="https://skillicons.dev/icons?i=ps" alt="photoshop"></a>
                     </div>  
                 </div>
-                <div class="grid-container-2 language flex-container mb-60 g-gap-20">
+                <div class="grid-container-2 language flex-container mb-60 g-gap-30">
                     <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                         <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=maven" alt="maven"></a>
                     </div>
@@ -151,7 +117,7 @@
 
                 <!-- Learning -->
                 <p data-translate="learning" class="mb-10"><strong>What I want to learn</strong></p>
-                <div class="grid-container-3 language flex-container g-gap-20">
+                <div class="grid-container-3 language flex-container g-gap-30">
                     <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                         <a target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React"></a>
                     </div>
@@ -162,7 +128,7 @@
                         <a target="_blank"><img src="https://skillicons.dev/icons?i=tailwind" alt="tailwind"></a>
                     </div>
                 </div>
-                <div class="grid-container-2 language flex-container mb-60 g-gap-20">
+                <div class="grid-container-2 language flex-container mb-60 g-gap-30">
                     <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                         <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=angular" alt="Angular"></a>
                     </div>
@@ -415,6 +381,11 @@
             </div>
             <div style="clear: both;"></div>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+        </footer>
 
         <!-- js -->
         <script src="/js/script.js" defer></script> 

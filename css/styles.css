@@ -2,6 +2,7 @@
 @import url(flex.css);
 @import url(mediascreen.css);
 @import url(lightmode.css);
+@import url(header.css);
 
 /* Spacing Reset:
 ** ------------------------------ */
@@ -53,6 +54,8 @@ hr {
     width: 30%;
     flex-direction: column;
     background-color: #2A2D31;
+    border-left: 2px solid #f0d394;
+    border-right: 2px solid #f0d394;
 }
  
 /* Profile Foto */
@@ -177,4 +180,18 @@ hr {
     right: 100px;
     z-index:1;
     height: 35px;
+}
+
+
+/* FOOTER:
+** ------------------------------ */
+footer {
+    border-top: 2px solid #f0d394;
+    background-color: #2A2D31; 
+    color: white; 
+    padding: 20px 0; 
+    text-align: center; 
+    width: 100%; 
+    bottom: 0; 
+    z-index: 1000; 
 }

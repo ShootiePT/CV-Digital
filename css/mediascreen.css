@@ -40,10 +40,9 @@
 
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
     #container {
-        width: 90% !important;
+        width: 100% !important;
     }
     
     #left-col {
@@ -51,9 +50,8 @@
     }
 
     #right-col {
-        width: 60% !important;
+        width: 55% !important;
         padding-left: 0px !important;
-
     }
 
     h2 {
