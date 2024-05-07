@@ -5,7 +5,7 @@
     <title>My Curriculum Vitae</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/resources/favIcon.png" type="image/x-icon">
-
+    
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 
@@ -17,21 +17,20 @@
         <header class="navbar">
             <div class="navbar-brand">My Website</div>
             <nav class="navbar-nav">
-                <a href="#">Home</a>
+                <a href="#" class="selected">Home</a>
                 <a href="#">My Background</a>
                 <a href="#">Ongoing Projects</a>
                 <a href="#">Completed Projects</a>
-
             </nav>
             <div class="navbar-controls g-gap-30">
                 <!-- LANGUAGE Buttons -->
-                <div class="language-toggle border-grey">                   
-                    <button id="lang-toggle" class="toggle-btn border-grey"></button>
+                <div class="language-toggle">                   
+                    <button id="lang-toggle" class="toggle-btn"></button>
                 </div>
 
                 <!-- Light/Dark Button -->
-                <div class="language-toggle border-grey" style="margin-right: 100px;">
-                    <button id="toggleButton" class="slider border-grey p-8"></button>
+                <div class="language-toggle">
+                    <button id="toggleButton" class="slider p-8"></button>
                 </div>  
             </div>
         </header>
@@ -417,7 +416,22 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
+        <div class="grid-container-2 language flex-container">
+            <div>
+                <p>&copy; 2024 José Rocha.</p>
+                <p>Todos os direitos reservados.</p>
+            </div>
+            <div>
+                <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img
+                            src="https://skillicons.dev/icons?i=gmail" alt="gmail"></a>
+                <a href="https://www.linkedin.com/in/joseflrocha" target="_blank"><img
+                            src="/resources/b-linkedin.png" style="width: 48px;" alt="linkedin"></a>
+                <a href="https://pt.pinterest.com/Goodies4Gamers/" target="_blank"><img
+                            src="/resources/r-pintrest.png" style="width: 48px;" alt="pintrest"></a>
+                <a href="https://github.com/ShootiePT" target="_blank"><img
+                            src="https://skillicons.dev/icons?i=github" alt="github"></a>
+            </div>
+        </div>
     </footer>
 
     <!-- js -->

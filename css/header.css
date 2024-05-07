@@ -1,3 +1,5 @@
+/* NAVBAR:
+** ------------------------------ */
 .navbar {
     background-color: #2A2D31; 
     color: white; 
@@ -22,14 +24,108 @@
     margin-right: 20px;
     color: white;
     text-decoration: none;
+    font-size: 16px;
     transition: color 0.3s ease;
+    display: inline-block;
 }
 
 .navbar-nav a:hover {
-    color: #f0d394; 
+    color: #f0d394;
+    transform: scale(1.1);
 }
+
+
+
 
 .navbar-controls {
     display: flex;
     align-items: center;
 }
+
+.selected {
+    color: #eec368 !important;
+}
+
+
+/* BUTTONS:
+** ------------------------------ */
+
+/* dark/light btn */
+#toggleButton {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 34px; 
+    box-shadow: 0 0 0 2px #4c5055; 
+}
+
+#toggleButton::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../resources/dark.png");
+    background-size: cover;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 0 2px #4c5055; 
+}
+
+#toggleButton.checked::before {
+    transform: translateX(26px);
+    background-image: url("../resources/light.png");
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #4c5055; 
+}
+
+
+#toggleButton.checked.slider {
+    background-color: #f0d394;
+}
+
+
+#lang-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 34px;
+    box-shadow: 0 0 0 2px #4c5055; 
+}
+
+#lang-toggle::before {
+    content: "EN";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 0 2px #4c5055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#lang-toggle.checked::before {
+    content: "PT";
+    transform: translateX(26px) !important;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #4c5055;
+}    
