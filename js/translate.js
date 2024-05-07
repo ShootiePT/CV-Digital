@@ -150,30 +150,13 @@ function translateElements(lang) {
 
 
 /* Language Selection */
-function setActiveButton(lang) {
-    if (lang === 'pt') {
-        document.getElementById('btn-pt').classList.add('btn-beige');
-        document.getElementById('btn-pt').classList.remove('btn-grey');
-        document.getElementById('btn-en').classList.add('btn-grey');
-        document.getElementById('btn-en').classList.remove('btn-beige');
-    } else if (lang === 'en') {
-        document.getElementById('btn-en').classList.add('btn-beige');
-        document.getElementById('btn-en').classList.remove('btn-grey');
-        document.getElementById('btn-pt').classList.add('btn-grey');
-        document.getElementById('btn-pt').classList.remove('btn-beige');
-    }
-}
+const langToggle = document.getElementById('lang-toggle');
 
-document.getElementById('btn-pt').addEventListener('click', () => {
-    translateElements('pt');
-    setActiveButton('pt');
+langToggle.addEventListener('click', () => {
+    langToggle.classList.toggle('checked');
+
+    const newLang = langToggle.classList.contains('checked') ? 'pt' : 'en';
+
+    translateElements(newLang);
+    setActiveButton(newLang);
 });
-
-document.getElementById('btn-en').addEventListener('click', () => {
-    translateElements('en');
-    setActiveButton('en');
-});
-
-/* Call Functions */
-translateElements('en');
-setActiveButton('en');

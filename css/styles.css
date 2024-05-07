@@ -139,48 +139,81 @@ hr {
 
 /* BUTTONS:
 ** ------------------------------ */
-#btn-en {
+
+/* dark/light btn */
+#toggleButton {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #cccccc;
     border: none;
-    border-radius: 0 0 0 10px;
-    cursor: pointer;
+    border-radius: 34px; 
 }
 
-#btn-pt {
-    border: none;
-    border-radius: 0 0 10px 0;
-    cursor: pointer;
-}
-
-.language-btn {
+#toggleButton::before {
+    content: "";
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index:1;
+    top: 3px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    background-image: url("../resources/dark.png");
+    background-size: cover;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 0 2px #4c5055; 
 }
 
-.btn-beige {
-    height: 35px;
+#toggleButton.checked::before {
+    transform: translateX(26px);
+    background-image: url("../resources/light.png");
+    background-size: cover;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #4c5055; 
+}
+
+
+#toggleButton.checked.slider {
     background-color: #f0d394;
-    color: #2A2D31;
 }
 
-.btn-grey {
-    height: 35px;
-    background-color: #2A2D31;
-    color: #fff;
+
+.language-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    background-color: #cccccc;
+    border-radius: 34px;
 }
 
-#toggleButton{
-    border: none;
-    border-radius: 0 0 10px 10px;
-    cursor: pointer;
-    z-index: 1;
+.toggle-btn {
     position: absolute;
-    top: 0;
-    right: 100px;
-    z-index:1;
-    height: 35px;
+    top: 3px;
+    left: 3px;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: transform 0.3s ease;
 }
+
+.toggle-btn.checked {
+    transform: translateX(26px);
+}
+
+.border-grey {
+    border: 2px solid #4c5055;
+}
+
+
+
+
 
 
 /* FOOTER:
