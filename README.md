@@ -27,5 +27,5 @@
 <div align="center">
   <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=gmail" alt="gmail"></a>
   <a href="https://www.linkedin.com/in/joseflrocha" target="_blank"><img src="https://skillicons.dev/icons?i=linkedin" alt="linkedIn"></a>
-  <a href="https://pinterest.pt/Goodies4Gamers" target="_blank"><img src="/resources/pintrest.png" alt="pintrest" width="48"></a>
+  <a href="https://pinterest.pt/Goodies4Gamers" target="_blank"><img src="/resources/r-pintrest.png" alt="pintrest" width="48"></a>
 </div>

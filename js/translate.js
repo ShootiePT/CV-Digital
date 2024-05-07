@@ -61,6 +61,7 @@ const languageData = {
         'Resilient': 'Resilient',
         'Empathic': 'Empathic',
         'TecSkills': 'Technical Skills',
+        'learning': '<strong>What I want to learn</strong>',
         },
     'pt': {
         'Location': '<strong>Localização:</strong>',
@@ -124,6 +125,7 @@ const languageData = {
         'Resilient': 'Resiliente',
         'Empathic': 'Empatia',
         'TecSkills': 'Competências Técnicas',
+        'learning': '<strong>O que quero Aprender</strong>',
     }
 };
 

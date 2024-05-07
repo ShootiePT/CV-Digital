@@ -7,26 +7,66 @@
 
         <link rel="stylesheet" href="/css/styles.css">
 
-        <script src="/js/script.js" defer></script> 
-        <script src="/js/translate.js" defer></script> 
-        <script src="/js/lightDarkMode.js" defer></script> 
+        <style>
+            /* Estilos CSS para a navbar */
+            .navbar {
+                background-color: #333; /* Cor de fundo do cabeçalho */
+                color: white; /* Cor do texto */
+                padding: 10px 0; /* Espaçamento interno do cabeçalho */
+                position: fixed; /* Tornar o cabeçalho fixo no topo */
+                top: 0; /* Fixar o cabeçalho no topo da página */
+                width: 100%; /* Fazer o cabeçalho ocupar a largura total */
+                z-index: 1000; /* Garantir que o cabeçalho esteja na frente de outros elementos */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+            }
+    
+            .navbar-brand {
+                font-size: 20px;
+            }
+    
+            .navbar-nav a {
+                margin-right: 20px;
+                color: white;
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+    
+            .navbar-nav a:hover {
+                color: #ffd700; /* Cor ao passar o mouse */
+            }
+    
+            .navbar-controls {
+                display: flex;
+                align-items: center;
+            }
+        </style>
     </head>
 
     <body>
         <!-- Container -->
         <div id="container" class="mr-auto ml-auto flex-container">
 
-            <!-- LANGUAGE Buttons -->
-            <div class="language-btn">
-                <button id="btn-en" class="btn-beige p-8" data-lang="en">EN</button>
-                <button id="btn-pt" class="btn-grey p-8" data-lang="pt">PT</button>
-            </div>
-
-            <!-- Light/Dark Button -->
-            <div>
-                <button id="toggleButton" class="p-8">Toggle</button>
-            </div>
-            
+            <header class="navbar">
+                <div class="navbar-brand">My Website</div>
+                <nav class="navbar-nav">
+                    <a href="#home">Home</a>
+                    <a href="#projects-ongoing">Projetos em Andamento</a>
+                    <a href="#projects-completed">Projetos Concluídos</a>
+                </nav>
+                <div class="navbar-controls">
+                    <!-- LANGUAGE Buttons -->
+                    <div class="language-btn">
+                        <button id="btn-en" class="btn-beige p-8" data-lang="en">EN</button>
+                        <button id="btn-pt" class="btn-grey p-8" data-lang="pt">PT</button>
+                    </div>
+                    <!-- Light/Dark Button -->
+                    <button id="toggleButton" class="p-8">Toggle</button>
+                </div>
+            </header>
+        
 
             <!-- LEFT Collumn -->
             <div id="left-col" class="pt-80 pb-80 flex-container flex-align-center">
@@ -109,12 +149,26 @@
                     </div>
                 </div>
 
-                <!-- Mail -->
-                <div>
-                    <p data-translate="GetInTouch" class="flex-container flex-align-center flex-justify-center mb-10">Get in touch</p>
-                    <p class="mb-30">
-                        <a class="no-decor beige" href="mailto:jose.f.rocha92@gmail.com">jose.f.rocha92@gmail.com</a>
-                    </p>
+                <!-- Learning -->
+                <p data-translate="learning" class="mb-10"><strong>What I want to learn</strong></p>
+                <div class="grid-container-3 language flex-container g-gap-20">
+                    <div class=" mb-10 flex-container flex-align-center flex-justify-between">
+                        <a target="_blank"><img src="https://skillicons.dev/icons?i=react" alt="React"></a>
+                    </div>
+                    <div class=" mb-10 flex-container flex-align-center flex-justify-between">
+                        <a target="_blank"><img src="https://skillicons.dev/icons?i=vue" alt="Vue"></a>
+                    </div>
+                    <div class=" mb-10 flex-container flex-align-center flex-justify-between">
+                        <a target="_blank"><img src="https://skillicons.dev/icons?i=tailwind" alt="tailwind"></a>
+                    </div>
+                </div>
+                <div class="grid-container-2 language flex-container mb-60 g-gap-20">
+                    <div class=" mb-10 flex-container flex-align-center flex-justify-between">
+                        <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=angular" alt="Angular"></a>
+                    </div>
+                    <div class=" mb-10 flex-container flex-align-center flex-justify-between">
+                        <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=figma" alt="Figma"></a>
+                    </div>
                 </div>
             </div>
 
@@ -337,7 +391,7 @@
                         <p class="inline-block ml-30">
                             <strong data-translate="UsedSoftware">Used Software:</strong>
                         </p>
-                        <span class="rounded-box">WordPress</span>
+                        <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img src="https://skillicons.dev/icons?i=wordpress" alt="wordpress"></a>
                     </div>
 
                     <h3 class="beige u-case mb-30">Completed Projects</h3>
@@ -361,5 +415,10 @@
             </div>
             <div style="clear: both;"></div>
         </div>
+
+        <!-- js -->
+        <script src="/js/script.js" defer></script> 
+        <script src="/js/translate.js" defer></script> 
+        <script src="/js/lightDarkMode.js" defer></script> 
     </body>
 </html>
