@@ -10,26 +10,11 @@
 </head>
 
 <body>
-    <!-- Container -->
-    <div id="container" class="mr-auto ml-auto flex-container">
-
-        
-            <!-- LANGUAGE Buttons -->
-            <div class="language-toggle">                   
-                <button id="lang-toggle" class="toggle-btn"></button>
-            </div>
-
-            <!-- Light/Dark Button -->
-            <div class="language-toggle">
-                <button id="toggleButton" class="slider p-8"></button>
-            </div>  
-        
-
-        <!-- Header -->
-        <header class="navbar">
+    <!-- Header -->
+    <header class="navbar">
+        <div class="navbar-content">
             <div class="navbar-brand">My Website</div>
-            <div class="w-30"></div>
-            <div class="header-divider pl-80">
+            <div class="header-divider">
                 <nav class="navbar-nav">
                     <a href="#" class="selected">Home</a>
                     <a href="#">My Background</a>
@@ -37,8 +22,24 @@
                     <a href="#">Completed Projects</a>
                 </nav>
             </div>
-        </header>
 
+            <!-- LANGUAGE Buttons -->
+            <div class="language-controls">
+                <div class="language-toggle">                   
+                    <button id="lang-toggle" class="toggle-btn"></button>
+                </div>
+
+                <!-- Light/Dark Button -->
+                <div class="language-toggle">
+                    <button id="toggleButton" class="slider p-8"></button>
+                </div> 
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Container -->
+    <div id="container" class="mr-auto ml-auto flex-container">
 
         <!-- LEFT Collumn -->
         <div id="left-col" class="pt-80 pb-80 flex-container flex-align-center">
@@ -140,8 +141,6 @@
                 <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                     <a target="_blank"><img src="https://skillicons.dev/icons?i=tailwind" alt="tailwind"></a>
                 </div>
-            </div>
-            <div class="grid-container-2 language flex-container mb-60 g-gap-30">
                 <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                     <a target="_blank"><img
                             src="https://skillicons.dev/icons?i=angular" alt="Angular"></a>
@@ -149,6 +148,10 @@
                 <div class=" mb-10 flex-container flex-align-center flex-justify-between">
                     <a target="_blank"><img
                             src="https://skillicons.dev/icons?i=figma" alt="Figma"></a>
+                </div>
+                <div class=" mb-10 flex-container flex-align-center flex-justify-between">
+                    <a target="_blank"><img
+                            src="https://skillicons.dev/icons?i=typescript" alt="Type Script"></a>
                 </div>
             </div>
         </div>
@@ -423,7 +426,7 @@
         <div class="grid-container-2 language flex-container">
             <div>
                 <p>&copy; 2024 José Rocha.</p>
-                <p>Todos os direitos reservados.</p>
+                <p>All rights reserved.</p>
             </div>
             <div>
                 <a href="mailto:jose.f.rocha92@gmail.com" target="_blank"><img
