@@ -62,6 +62,7 @@ const languageData = {
         'Empathic': 'Empathic',
         'TecSkills': 'Technical Skills',
         'learning': '<strong>What I want to learn</strong>',
+        'rightsReserved': "&copy; José Rocha, All Rights Reserved.",
         },
     'pt': {
         'Location': '<strong>Localização:</strong>',
@@ -126,6 +127,7 @@ const languageData = {
         'Empathic': 'Empatia',
         'TecSkills': 'Competências Técnicas',
         'learning': '<strong>O que quero Aprender</strong>',
+        'rightsReserved':"&copy; José Rocha, Todos os Direitos Reservados.",
     }
 };
 
