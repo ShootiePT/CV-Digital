@@ -1,15 +1,20 @@
 const toggleButton = document.getElementById('toggleButton');
+const body = document.body;
+const leftCol = document.getElementById('left-col');
 let isDarkMode = true;
 
 toggleButton.addEventListener('click', function() {
-    const body = document.body;
-    if (isDarkMode) {
-        body.classList.remove('dark-mode');
-        body.classList.add('light-mode');
-    } else {
-        body.classList.remove('light-mode');
-        body.classList.add('dark-mode');
-    }
+    // Alternar o modo para o body
+    body.classList.toggle('light-mode');
+    body.classList.toggle('dark-mode');
+
+    // Alternar o modo para o left-col
+    leftCol.classList.toggle('col-light-mode');
+    leftCol.classList.toggle('col-dark-mode');
+
+    // Alternar a variável de controle
     isDarkMode = !isDarkMode;
-    this.classList.toggle("checked");
+
+    // Alternar a classe "checked" no botão toggleButton
+    toggleButton.classList.toggle("checked");
 });

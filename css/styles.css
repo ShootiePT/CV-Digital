@@ -13,9 +13,7 @@ html, body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-    background-color: #4c5055;
     font-family: Poppins,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    color: white;
 }
 
 p, h2, h3, h4 {
@@ -36,6 +34,7 @@ hr {
 #container {
     width: 80%;
     position: relative;
+    min-height: 100vh;
 }
 
 .beige {
@@ -55,7 +54,7 @@ hr {
 #left-col {
     width: 30%;
     flex-direction: column;
-    background-color: #2A2D31;
+    background-color: #000;
 }
  
 /* Profile Foto */
@@ -140,12 +139,25 @@ hr {
 /* FOOTER:
 ** ------------------------------ */
 footer {
-    border-top: 2px solid #f0d394;
-    background-color: #2A2D31; 
+    background-color: #000; 
     color: white; 
     padding: 20px 0; 
-    text-align: center; 
     width: 100%; 
     bottom: 0; 
     z-index: 1000; 
+}
+
+.f-content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-content {
+    text-align: left;
+}
+
+.right-content {
+    text-align: right;
 }

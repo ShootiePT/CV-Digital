@@ -2,3 +2,17 @@ body.light-mode {
     background-color: #FFFFFF;
     color: #000000;
 }
+
+body.dark-mode {
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.col-dark-mode {
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+.col-light-mode {
+    color: #fff !important;
+}
