@@ -4,7 +4,6 @@ const languageData = {
         'Portuguese': 'Portuguese',
         'English': 'English',
         'Spanish': 'Spanish',
-        'GetInTouch': 'Get in touch',
         'AboutMe': 'ABOUT ME',
         'Hello': "A tech-savvy sports enthusiast turned coding aficionado, I've sprinted through sales and dove headfirst into the world of video game design. Now, armed with a keyboard and a dream, I'm on a mission to conquer the digital universe, one line of code at a time. Join me on this epic quest, where bugs are foes to be vanquished and algorithms are my trusty allies!",
         'Experience': 'EXPERIENCE',
@@ -62,6 +61,7 @@ const languageData = {
         'Empathic': 'Empathic',
         'TecSkills': 'Technical Skills',
         'learning': '<strong>What I want to learn</strong>',
+        'learningOngoing': '<strong>Learning Ongoing</strong>',
         'rightsReserved': "&copy; José Rocha, All Rights Reserved.",
         },
     'pt': {
@@ -69,7 +69,6 @@ const languageData = {
         'Portuguese': 'Português',
         'English': 'Inglês',
         'Spanish': 'Espanhol',
-        'GetInTouch': 'Entrar em contacto',
         'AboutMe': 'SOBRE MIM',
         'Hello': 'Como entusiasta de desporto e aficionado pela tecnologia, transformei-me num verdadeiro apaixonado pela programação. Naveguei rapidamente pelo mundo das vendas e mergulhei de cabeça no fascinante universo do design de videojogos. Agora, equipado apenas com um teclado e um sonho, embarquei numa missão ousada: conquistar o vasto universo digital, uma linha de código de cada vez. ',
         'Experience': 'EXPERIÊNCIA',
@@ -127,6 +126,7 @@ const languageData = {
         'Empathic': 'Empatia',
         'TecSkills': 'Competências Técnicas',
         'learning': '<strong>O que quero Aprender</strong>',
+        'learningOngoing': '<strong>Aprendizagem em Curso</strong>',
         'rightsReserved':"&copy; José Rocha, Todos os Direitos Reservados.",
     }
 };

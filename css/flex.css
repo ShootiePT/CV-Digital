@@ -18,12 +18,28 @@
     justify-content: flex-end;
 }
 
+.flex-start {
+    justify-content: flex-start;
+}
+
 .inline-block {
     display: inline-block;
 }
 
 .flex-wrap {
     flex-wrap: wrap;
+}
+
+.flex-non-wrap {
+    flex-wrap: nowrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-10 {
+    gap: 10px;
 }
 
 
@@ -33,6 +49,12 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-top: -10px;
+}
+
+.grid-container-2-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
 }
 
 .grid-container-3 {
